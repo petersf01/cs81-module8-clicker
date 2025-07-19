@@ -9,5 +9,33 @@
   <button id="addButton">🍪 Click to add</button>
   <div id="counter">0</div>
   <div id="message"></div>
+
+  <script>
+    // get elements by id
+    const button = document.getElementById("addButton");
+    const counterDiv = document.getElementById("counter");
+    const messageDiv = document.getElementById("message");
+
+    // Click counter variable
+    let count = 0;
+
+    // Add event listener
+    button.addEventListener("click", function () {
+    count++;
+    counterDiv.textContent = count;
+
+    // Show messages
+    if (count === 10) {
+        messageDiv.textContent = "You're just getting started";
+    } else if (count === 25) {
+        messageDiv.textContent = "Wow, that's a lot of cookies";
+    } else if (count === 50) {
+        messageDiv.textContent = "Are you still clicking?";
+    } else if (count === 100) {
+        messageDiv.textContent = "You win! Maybe take a break";
+    }
+    });
+
+    </script>
 </body>
 </html>
