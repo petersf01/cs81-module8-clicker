@@ -22,11 +22,14 @@
     // Add event listener
     button.addEventListener("click", function () {
     count++;
+    // update the count div text
     counterDiv.textContent = count;
 
     // Show messages
     if (count === 10) {
+        // change background to random color
         document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        // update the message div
         messageDiv.textContent = "You're just getting started";
     } else if (count === 25) {
         messageDiv.textContent = "Wow, that's a lot of cookies";
