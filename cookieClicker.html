@@ -26,13 +26,17 @@
 
     // Show messages
     if (count === 10) {
+        document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         messageDiv.textContent = "You're just getting started";
     } else if (count === 25) {
         messageDiv.textContent = "Wow, that's a lot of cookies";
+        document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     } else if (count === 50) {
         messageDiv.textContent = "Are you still clicking?";
+        document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     } else if (count === 100) {
         messageDiv.textContent = "You win! Maybe take a break";
+        document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
     }
     });
 
